@@ -51,6 +51,8 @@ let sceltaUtente = prompt("Scegli: pari o dispari").toLowerCase();
 // Chiediamo all'utente un numero da 1 a 5
 let numeroUtente = Number(prompt("Inserisci un numero da 1 a 5"));
 
+// Usiamo Number(...) per convertire il testo in numero (altrimenti sarebbe una stringa, tipo "3" invece di 3).
+
 // Funzione che genera un numero random da 1 a 5
 function generaNumeroPc() {
   return Math.floor(Math.random() * 5) + 1;
@@ -78,8 +80,7 @@ let risultatoPari = èPari(somma);
 
 // Controlliamo chi ha vinto
 if (
-  (risultatoPari && sceltaUtente === "pari") ||
-  (!risultatoPari && sceltaUtente === "dispari")
+  (risultatoPari && sceltaUtente === "pari") || (!risultatoPari && sceltaUtente === "dispari")
 ) {
   console.log("🎉 Hai vinto!");
 } else {

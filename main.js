@@ -8,8 +8,9 @@ function parola_palindroma(parola_Utente) {
     let parolaInvertita = ""
     for (let i = parola_Utente.length - 1; i >= 0; i--) {
         parolaInvertita += parola_Utente[i]
-        //👉 parolaInvertita += parola_Utente[i] → aggiunge un carattere alla volta alla nuova stringa.
-        // si può anche scrivere così: parolaInvertita = parolaInvertita + parola_Utente[i];
+        //👉 parolaInvertita += parola_Utente[i] → aggiunge un carattere alla volta alla nuova stringa
+        // si può anche scrivere così: parolaInvertita = parolaInvertita + parola_Utente[i]
+        // 🔹 += È un operatore di assegnazione abbreviato. x += y è uguale a x = x + y
     }
 
     //condizione per confronto

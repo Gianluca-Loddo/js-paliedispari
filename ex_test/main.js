@@ -1,7 +1,7 @@
 // ===== PALINDROMA =====
 
 // Chiediamo all'utente di inserire una parola
-let parola = prompt("Inserisci una parola:");
+let parola = prompt("Inserisci una parola:").toLowerCase(); // con toLowerCase() convertiamo la parola in minuscolo per uniformità
 
 // Funzione per controllare se la parola è palindroma
 function Palindroma(str) {
@@ -15,6 +15,9 @@ function Palindroma(str) {
 
   // Confrontiamo la parola originale con quella invertita
   return str === parolaInvertita;
+  //👉 Confronta la parola originale con quella invertita
+  //📌 Se sono uguali, restituisce true
+  //📌 Se sono diverse, restituisce false
 }
 
 // Verifichiamo se la parola è palindroma e stampiamo il risultato

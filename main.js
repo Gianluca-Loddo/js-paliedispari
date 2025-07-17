@@ -100,6 +100,19 @@ if (sommaÈPari === false) {
   }
 }
 
+/*
+SI PUÒ ANCHE SCRIVERE COSÌ:
+
+if (sommaÈPari === true && sceltaUtente === "pari") {
+  utenteHaVinto = true;
+}
+
+if (sommaÈPari === false && sceltaUtente === "dispari") {
+  utenteHaVinto = true;
+}
+
+*/ 
+
 // 12. Stampiamo il risultato finale
 if (utenteHaVinto === true) {
   console.log("🎉 Complimenti, hai vinto!");

@@ -11,6 +11,8 @@ function Palindroma(str) {
   // Scorriamo la stringa al contrario e costruiamo la parola invertita
   for (let i = str.length - 1; i >= 0; i--) {
     parolaInvertita += str[i];
+    //👉 parolaInvertita += str[i] → aggiunge un carattere alla volta alla nuova stringa.
+    // si può anche scrivere così: parolaInvertita = parolaInvertita + str[i];
   }
 
   // Confrontiamo la parola originale con quella invertita

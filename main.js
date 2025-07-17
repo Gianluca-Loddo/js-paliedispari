@@ -84,7 +84,9 @@ function èPari(numero) {
 let sommaÈPari = èPari(somma); // true se pari, false se dispari
 
 // 11. Verifica se l'utente ha vinto
-let utenteHaVinto = false;
+let utenteHaVinto = false;  // cioè: per ora, di default, l'utente ha perso, Poi, se le condizioni lo permettono 
+                            // (cioè: se la somma è pari e l’utente ha scelto "pari", oppure somma dispari e ha scelto "dispari"), 
+                            // la variabile viene aggiornata:
 
 if (sommaÈPari === true) {
   if (sceltaUtente === "pari") {
